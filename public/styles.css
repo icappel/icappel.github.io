@@ -241,7 +241,7 @@ header a:active {
 /* End header styles */
 
 article {
-    min-height: calc(100vh - 9em);
+    min-height: calc(100vh - 15em);
     padding: 1.2em;
     line-height: 1.7em;
     max-width: 700px;
@@ -253,6 +253,7 @@ article h1 {
     text-align: center;
     font-weight: bold;
     font-size: 2.5em;
+    line-height: 1em;
     padding: 0.5em 1em 1em 1em;
 }
 
@@ -294,3 +295,43 @@ footer a:hover {
     }
 }
 /* End footer styles */
+
+/* Begin testimonial styles */
+blockquote {
+    background-color: #cccccc;
+    padding: 2em;
+    text-align: center;
+}
+
+blockquote .quote_mark {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+blockquote cite {
+    display: block;
+    text-align: end;
+}
+
+/* End testimonial styles */
+
+/* Begin contact styles */
+.links_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.link img {
+    min-width: 21px; /* To comply with LinkedIn trademark policies */
+    max-width: 3em;
+    margin-right: 1em;
+}
+/* End contact styles */

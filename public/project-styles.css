@@ -1,0 +1,17 @@
+.project {
+    text-align: center;
+    border: 1px dashed grey;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.project figure {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.project iframe {
+    width: 100%;
+    height: 25em;
+    max-height: 65vh;
+}
