@@ -13,7 +13,7 @@ svg.header_content__logo {
     height: 50px;
     user-select: none;
     margin-bottom: 1px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 svg #C {
@@ -60,10 +60,6 @@ header a:hover {
 }
 
 header a:active {
-
-}
-
-.header_content {
 
 }
 
@@ -255,6 +251,7 @@ article h1 {
     font-size: 2.5em;
     line-height: 1em;
     padding: 0.5em 1em 1em 1em;
+    margin: 0.5em;
 }
 
 .top_link {
@@ -295,6 +292,87 @@ footer a:hover {
     }
 }
 /* End footer styles */
+
+/* Begin home styles */
+a.home_link {
+    background-color: hsla(360, 100%, 50%, 1);
+    transition: background-color 0.5s;
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a.home_link:hover {
+    background-color: hsla(360, 100%, 25%, 1);
+}
+
+section.home_section {
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_content .project {
+    margin: 0.5em;
+}
+
+@supports (grid-area: auto) {
+    @media screen and (min-width: 1000px) {
+        article.home_content {
+            max-width: 1050px;
+            display: grid;
+            grid-template-columns: 35em 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "top top"
+                "left right_top"
+                "left right_bottom";
+        }
+
+        #section_1 {
+            grid-area: top;
+        }
+
+        #section_2 {
+            grid-area: left;
+        }
+
+        #section_3 {
+            grid-area: right_top;
+        }
+
+        #section_4 {
+            grid-area: right_bottom;
+        }
+    }
+}
+/* End home styles */
+
+/* Begin project styles */
+.project {
+    text-align: center;
+    border: 1px dashed grey;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.project figure {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.project iframe {
+    width: 100%;
+    height: 25em;
+    max-height: 65vh;
+}
+/* End project styles */
 
 /* Begin testimonial styles */
 blockquote {
