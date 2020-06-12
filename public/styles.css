@@ -1,13 +1,25 @@
 /* Begin "theme" styles (eg colours, borders, fonts) */
 
 .site {
-    font-family: 'Helvetica', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: hsla(215, 65%, 22%, 1);
+}
+
+article h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+article {
+    background-color: #eeeeee;
 }
 
 /* Begin header theme styles */
 header {
-    background-color: orange;
-    box-shadow: 0 0 0.4em 0 grey;
+    background-color: black;
+    box-shadow: 0 0 0.4em 0 #222222;
 }
 
 header a, footer a {
@@ -31,19 +43,19 @@ header a, footer a {
 }
 
 .home_group:hover #I, .home_group:hover #name_I {
-    fill: blue;
-    stroke: blue;
-    color: blue;
+    fill: #999999;
+    stroke: #999999;
+    color: #999999;
 }
 
 .home_group:hover #C, .home_group:hover #name_C {
-    fill: red;
-    stroke: red;
-    color: red;
+    fill: hsla(215, 65%, 50%, 1);
+    stroke: hsla(215, 65%, 50%, 1);
+    color: hsla(215, 65%, 50%, 1);
 }
 
 #main_nav { /* The main navigation menu (remember the design is mobile-first) */
-    background-color: grey;
+    background-color: hsla(0, 0%, 20%, 1);
 }
 
 #main_nav li:first-of-type {
@@ -55,7 +67,7 @@ header a, footer a {
 }
 
 #main_nav a.active {
-    color: green;
+    color: hsla(215, 65%, 50%, 1);
 }
 
 #main_nav a:hover {
@@ -72,7 +84,7 @@ header a, footer a {
     color: #999999;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 769px) {
     #main_nav {
         background-color: inherit;
     }
@@ -85,28 +97,17 @@ header a, footer a {
         border: none;
     }
 
-    #main_nav a.active {
-        color: blue;
-    }
-
     #main_nav a.active:hover {
         color: #444444;
     }
 }
 /* End header */
 
-article h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5em;
-    line-height: 1em;
-}
-
 /* Begin footer styles */
 footer {
-    background-color: darkorchid;
+    background-color: black;
     color: white;
-    box-shadow: 0 0 0.3em 0 grey;
+    box-shadow: 0 0 0.3em 0 #222222;
 }
 
 footer a:hover {
@@ -116,16 +117,20 @@ footer a:hover {
 
 /* Begin home styles */
 a.home_link {
-    background-color: hsla(360, 100%, 50%, 1);
+    background-color: hsla(0, 97%, 40%, 1);
     color: white;
 }
 
 a.home_link:hover {
-    background-color: hsla(360, 100%, 25%, 1);
+    background-color: hsla(0, 97%, 20%, 1);
 }
 
 section.home_section {
     background-color: #eeeeee;
+}
+
+article.home_content {
+    background-color: inherit;
 }
 /* End home styles */
 
@@ -134,12 +139,6 @@ section.home_section {
     border: 1px dashed grey;
 }
 /* End project styles */
-
-/* Begin testimonial styles */
-blockquote {
-    background-color: #cccccc;
-}
-/* End testimonial styles */
 
 .skip-to-content-link {
     background-color: orange;
@@ -267,7 +266,7 @@ header a, footer a {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 769px) {
     
     .header_content {
         display: flex;
@@ -317,8 +316,13 @@ article {
     padding: 1.2em;
     line-height: 1.7em;
     max-width: 44rem;
-    margin: 2em auto;
-    /* border: 0.5em dashed black; */
+    margin: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+    article {
+        margin: 2rem auto;
+    }
 }
 
 article h1 {
@@ -376,6 +380,11 @@ section.home_section {
     justify-content: center;
 }
 
+.home_section h3 {
+    /* margin-top: 0; */
+    margin-bottom: 0;
+}
+
 .home_content .project {
     margin: 0.5em;
 }
@@ -430,26 +439,6 @@ section.home_section {
     max-height: 65vh;
 }
 /* End project styles */
-
-/* Begin testimonial styles */
-blockquote {
-    padding: 2em;
-    text-align: center;
-}
-
-blockquote .quote_mark {
-    text-align: center;
-    font-size: 3em;
-    line-height: 1em;
-    margin-top: 1em;
-}
-
-blockquote cite {
-    display: block;
-    text-align: end;
-}
-
-/* End testimonial styles */
 
 /* Begin contact styles */
 @media screen and (min-width: 450px) {
