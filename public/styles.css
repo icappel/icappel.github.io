@@ -14,6 +14,7 @@ article h1 {
 
 article {
     background-color: #eeeeee;
+    border-radius: 0.5rem;
 }
 
 /* Begin header theme styles */
@@ -117,16 +118,17 @@ footer a:hover {
 
 /* Begin home styles */
 a.home_link {
-    background-color: hsla(0, 97%, 40%, 1);
+    background-color: hsla(170, 100%, 29%, 1);
     color: white;
 }
 
 a.home_link:hover {
-    background-color: hsla(0, 97%, 20%, 1);
+    background-color: hsla(170, 100%, 19%, 1);
 }
 
 section.home_section {
     background-color: #eeeeee;
+    border-radius: 0.5rem;
 }
 
 article.home_content {
@@ -137,11 +139,12 @@ article.home_content {
 /* Begin project styles */
 .project {
     border: 1px dashed grey;
+    border-radius: 0.5rem;
 }
 /* End project styles */
 
 .skip-to-content-link {
-    background-color: orange;
+    background-color: white;
 }
 /* End "theme" styles */
 
@@ -332,6 +335,9 @@ article h1 {
 
 .top_link {
     text-align: center;
+    display: block;
+    margin: auto;
+    padding: 1em;
 }
 
 /* Begin footer styles */
@@ -383,6 +389,10 @@ section.home_section {
 .home_section h3 {
     /* margin-top: 0; */
     margin-bottom: 0;
+}
+
+.home_content {
+    padding: 0;
 }
 
 .home_content .project {
@@ -467,7 +477,7 @@ section.home_section {
     top: 5vh;
     z-index: 9999;
     padding: 0.5em;
-    position: absolute;
+    position: fixed;
     transform: translateY(-100vh);
 }
   
