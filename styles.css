@@ -242,6 +242,11 @@ header a, footer a {
 
 #main_nav li {
     text-align: center;
+}
+
+#main_nav li a {
+    display: block;
+    height: 100%;
     padding: 10px;
 }
 
@@ -293,6 +298,10 @@ header a, footer a {
     }
 
     #main_nav li {
+        display: inline;
+    }
+
+    #main_nav li a {
         display: inline;
     }
 
