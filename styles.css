@@ -328,7 +328,7 @@ article {
     padding: 1.2em;
     line-height: 1.7em;
     max-width: 44rem;
-    margin: 1rem;
+    margin: 0.75rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -396,7 +396,6 @@ section.home_section {
 }
 
 .home_section h3 {
-    /* margin-top: 0; */
     margin-bottom: 0;
 }
 
@@ -406,6 +405,12 @@ section.home_section {
 
 .home_content .project {
     margin: 0.5em;
+}
+
+@media screen and (max-width: 460px) {
+    #section_2 {
+        display: none;
+    }
 }
 
 @supports (grid-area: auto) {
