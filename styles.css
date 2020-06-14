@@ -155,6 +155,7 @@ article.home_content {
 .site {
     margin: 0;
     overscroll-behavior: none;
+    overflow-x: hidden;
 }
 
 /* Begin header styles */
