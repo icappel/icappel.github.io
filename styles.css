@@ -462,6 +462,13 @@ section.home_section {
     height: 25em;
     max-height: 65vh;
 }
+
+@media screen and (max-width: 460px) {
+    .hide_on_small {
+        display: none;
+    }
+}
+
 /* End project styles */
 
 /* Begin contact styles */
