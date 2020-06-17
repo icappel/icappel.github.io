@@ -396,6 +396,10 @@ section.home_section {
     justify-content: center;
 }
 
+section.home_section ul {
+    text-align: left;
+}
+
 .home_section h3 {
     margin-bottom: 0;
 }
@@ -447,6 +451,10 @@ section.home_section {
 /* End home styles */
 
 /* Begin project styles */
+.projects_page {
+    text-align: center;
+}
+
 .project {
     text-align: center;
     margin-top: 2em;
