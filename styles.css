@@ -472,6 +472,13 @@ section.home_section ul {
     max-height: 65vh;
 }
 
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 1px solid hsla(215, 65%, 22%, 1);
+}
+
 @media screen and (max-width: 460px) {
     .hide_on_small {
         display: none;
