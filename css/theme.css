@@ -1,0 +1,149 @@
+/* Styles that control colours, fonts, etc. that represent the visual "theme" of 
+the entire site. */
+
+.site {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: hsla(215, 65%, 22%, 1);
+}
+
+article h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+article {
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+}
+
+/* Begin header theme styles */
+header {
+    background-color: black;
+    box-shadow: 0 0 0.4em 0 #222222;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#header__name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#header__position { /* The line of text shown below my name */
+    color: white;
+}
+
+.home_group { /* The link consisting of my logo, name, and position */
+    color: white;
+    stroke: white;
+    fill: white;
+}
+
+.home_group:hover #I, .home_group:hover #name_I {
+    fill: #999999;
+    stroke: #999999;
+    color: #999999;
+}
+
+.home_group:hover #C, .home_group:hover #name_C {
+    fill: hsla(215, 65%, 50%, 1);
+    stroke: hsla(215, 65%, 50%, 1);
+    color: hsla(215, 65%, 50%, 1);
+}
+
+#main_nav { /* The main navigation menu (remember the design is mobile-first) */
+    background-color: hsla(0, 0%, 20%, 1);
+}
+
+#main_nav li:first-of-type {
+    border-top: 1px solid #444444;
+}
+
+#main_nav li {
+    border-bottom: 1px solid #444444;
+}
+
+#main_nav a.active {
+    color: hsla(215, 65%, 50%, 1);
+}
+
+#main_nav a:hover {
+    color: #999999;
+}
+
+#mobile_menu_button {
+    color: white;
+    border: none;
+    background-color: inherit;
+}
+
+#mobile_menu_button svg:hover {
+    color: #999999;
+}
+
+@media screen and (min-width: 769px) {
+    #main_nav {
+        background-color: inherit;
+    }
+
+    #main_nav li {
+        border: none;
+    }
+
+    #main_nav li:first-of-type {
+        border: none;
+    }
+
+    #main_nav a.active:hover {
+        color: #444444;
+    }
+}
+/* End header */
+
+/* Begin footer styles */
+footer {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0.3em 0 #222222;
+}
+
+footer a:hover {
+    color: hsla(0, 0%, 70%, 1);
+}
+/* End footer styles */
+
+/* Begin home styles */
+a.home_link {
+    background-color: hsla(170, 100%, 29%, 1);
+    color: white;
+}
+
+a.home_link:hover {
+    background-color: hsla(170, 100%, 19%, 1);
+}
+
+section.home_section {
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+}
+
+article.home_content {
+    background-color: inherit;
+}
+/* End home styles */
+
+/* Begin project styles */
+.project {
+    border: 1px dashed grey;
+    border-radius: 0.5rem;
+}
+/* End project styles */
+
+.skip-to-content-link {
+    background-color: white;
+}

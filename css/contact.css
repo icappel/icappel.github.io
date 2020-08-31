@@ -1,0 +1,18 @@
+@media screen and (min-width: 450px) {
+    .links_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.link img {
+    min-width: 21px; /* To comply with LinkedIn trademark policies */
+    max-width: 3em;
+    margin-right: 0.5em;
+}
