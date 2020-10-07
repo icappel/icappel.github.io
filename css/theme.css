@@ -69,7 +69,8 @@ header a, footer a {
 }
 
 #main_nav a.active {
-    color: hsla(216, 71%, 52%, 1);
+    /* color: hsla(216, 71%, 52%, 1); */
+    text-decoration: underline;
 }
 
 #main_nav a:hover {
