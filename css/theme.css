@@ -69,7 +69,7 @@ header a, footer a {
 }
 
 #main_nav a.active {
-    color: hsla(215, 65%, 50%, 1);
+    color: hsla(216, 71%, 52%, 1);
 }
 
 #main_nav a:hover {
@@ -119,7 +119,7 @@ footer a:hover {
 
 /* Begin home styles */
 a.home_link {
-    background-color: hsla(170, 100%, 29%, 1);
+    background-color: hsla(175, 100%, 26%, 1);
     color: white;
 }
 
