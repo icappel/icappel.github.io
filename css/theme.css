@@ -3,6 +3,10 @@ the entire site. */
 
 .site {
     font-family: Verdana, Geneva, sans-serif;
+    background-color: black;
+}
+
+.main-background {
     background-color: hsla(215, 65%, 22%, 1);
 }
 
