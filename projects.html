@@ -1,165 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Projects | Ian Cappellani</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/projects.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png"/>
-    <link rel="manifest" href="site.webmanifest"/>
-</head>
-
-<body class="site">
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
-    <header id="header">
-        <div class="header_content">
-            <div class="mobile_wrapper">
-                <a class="home_group" href="https://iancappellani.com">
-                    <svg aria-label="Ian Cappellani" class="header_content__logo" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100" version="1.1">
-                        <ellipse cx="100" cy="50" rx="95" ry="45" stroke-width="10" fill="none" />
-                        <text x="63" y="86" id="C">C</text>
-                        <text x="92" y="72" id="I">I</text>
-                    </svg>
-                    <div class="home_group__name">
-                        <div id="header__name">
-                            <span id="name_I">I</span>an <span id="name_C">C</span>appellani
-                        </div>
-                        <div id="header__position">New-Grad Developer</div>
-                    </div>
-                </a>
-                <button id="mobile_menu_button" aria-label="Open navigation menu">
-                    <svg aria-labelledby="mobile_menu_button" xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 100 80" version="1.1">
-                        <line x1="0" x2="100" y1="10" y2="10" stroke="currentColor" stroke-width="10" />
-                        <line x1="0" x2="100" y1="40" y2="40" stroke="currentColor" stroke-width="10" />
-                        <line x1="0" x2="100" y1="70" y2="70" stroke="currentColor" stroke-width="10" /> 
-                        </svg>
-                </button>
-            </div>
-            <nav id="main_nav" class="hidden">
-                <ul class="hidden">
-                    <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="active" aria-current="page" href="projects.html">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="main">
-        <article id="main_content" class="projects_page">
-            <h1>Things I've Made</h1>
-            <p>
-                This page has summary of various personal projects I have 
-                independently undertaken as well as links to their code.
-            </p>
-            <hr />
-            <section>
-                <h2>Web Projects</h2>
-                <section class="project">
-                    <h3>The Truly Minimalist Newspaper</h3>
-                    <figure>
-                        <img src="media/truly_minimalist.png" alt="Screenshot of Truly Minimalist Newspaper homepage.">
-                        <figcaption>
-                            <p>
-                                An online newsletter for people who don't like 
-                                the news.
-                            </p>
-                            <p>
-                                While not super technically-sophisticated, this 
-                                project did involve setting up a PayPal button, a bit 
-                                of DNS wrangling, and getting a business 
-                                license in the province of Ontario!
-                            </p>
-                            <p>
-                                You can check out the website at 
-                                <a href="https://trulyminimalist.news">this link</a>.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </section>
-                <section class="project">
-                    <h3>Wikipedia Binge Visualizer</h3>
-                    <figure>
-                        <img src="media/wiki_binge.png" alt="Screenshot of Wikipedia Binge Visualizer Work in Progress">
-                        <figcaption>
-                            <p>
-                                If you're anything like me, you sometimes end 
-                                up wondering how you got to where you are after 
-                                reading Wikipedia for awhile. I thought it might 
-                                be interesting to view this using the implicit
-                                tree-like structure created by opening multiple 
-                                articles in new tabs.
-                            </p>
-                            <p>
-                                This project is a work in progress. Currently 
-                                the trees are built up in a custom data 
-                                structure before being translated to the 
-                                structure required by 
-                                <a href="https://fperucic.github.io/treant-js/">Treant.js</a>
-                                for drawing. The images and human-readable 
-                                article titles are fetched using the 
-                                <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> 
-                                API.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </section>
-                <section class="project">
-                    <h3>This Website</h3>
-                    <figure>
-                        <iframe id="this-site" title="This Website" class="hide_on_small" 
-                                src="https://iancappellani.com"></iframe>
-                        <figcaption>
-                            <p>
-                                This website is 100% coded by me using vanilla 
-                                JavaScript, CSS, and HTML. 
-                            </p>
-                            <p class="hide_on_small">
-                                As you can see from the iFrame above, the site 
-                                is fully responsive.
-                            </p>
-                            <p>
-                                Feel free to peruse the code in the devtools, 
-                                or check out the GitHub repo 
-                                <a href="https://github.com/icappel/icappel.github.io">
-                                    here.
-                                </a>
-                            </p>
-                        </figcaption>
-                    </figure>
-                </section>
-            </section>
-            <a class="top_link" href="#">Top ^</a>
-        </article>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://iancappellani.com">HOME</a>
-                </li>
-                <li>
-                    <a class="active" href="about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="projects.html">PROJECTS</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="copyright">Copyright &copy; 2020 Ian Cappellani</div>
-    </footer>
-    <script src="script.js" ></script>
-</body>
-</html>
+---
+layout: default
+title: Projects
+customCss:
+    - projects.css
+---
+<article id="main_content" class="projects_page">
+    <h1>Things I've Made</h1>
+    <p>
+        This page has summary of various personal projects I have 
+        independently undertaken as well as links to their code.
+    </p>
+    <hr />
+    <section>
+        <h2>Web Projects</h2>
+        <section class="project">
+            <h3>The Truly Minimalist Newspaper</h3>
+            <figure>
+                <img src="/media/truly_minimalist.png" alt="Screenshot of Truly Minimalist Newspaper homepage.">
+                <figcaption>
+                    <p>
+                        An online newsletter for people who don't like 
+                        the news.
+                    </p>
+                    <p>
+                        While not super technically-sophisticated, this 
+                        project did involve setting up a PayPal button, a bit 
+                        of DNS wrangling, and getting a business 
+                        license in the province of Ontario!
+                    </p>
+                    <p>
+                        You can check out the website at 
+                        <a href="https://trulyminimalist.news">this link</a>.
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="project">
+            <h3>Wikipedia Binge Visualizer</h3>
+            <figure>
+                <img src="/media/wiki_binge.png" alt="Screenshot of Wikipedia Binge Visualizer Work in Progress">
+                <figcaption>
+                    <p>
+                        If you're anything like me, you sometimes end 
+                        up wondering how you got to where you are after 
+                        reading Wikipedia for awhile. I thought it might 
+                        be interesting to view this using the implicit
+                        tree-like structure created by opening multiple 
+                        articles in new tabs.
+                    </p>
+                    <p>
+                        This project is a work in progress. Currently 
+                        the trees are built up in a custom data 
+                        structure before being translated to the 
+                        structure required by 
+                        <a href="https://fperucic.github.io/treant-js/">Treant.js</a>
+                        for drawing. The images and human-readable 
+                        article titles are fetched using the 
+                        <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> 
+                        API.
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="project">
+            <h3>This Website</h3>
+            <figure>
+                <iframe id="this-site" title="This Website" class="hide_on_small" 
+                        src="https://iancappellani.com"></iframe>
+                <figcaption>
+                    <p>
+                        This website is 100% coded by me using vanilla 
+                        JavaScript, CSS, and HTML. 
+                    </p>
+                    <p class="hide_on_small">
+                        As you can see from the iFrame above, the site 
+                        is fully responsive.
+                    </p>
+                    <p>
+                        Feel free to peruse the code in the devtools, 
+                        or check out the GitHub repo 
+                        <a href="https://github.com/icappel/icappel.github.io">
+                            here.
+                        </a>
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+    <a class="top_link" href="#">Top ^</a>
+</article>

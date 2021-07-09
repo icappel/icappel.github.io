@@ -3,15 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
-    <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/theme.css" />
+    {% for cssFile in page.customCss %}
+        <link rel="stylesheet" type="text/css" href="/css/{{ cssFile }}" />
+    {% endfor %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/media/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/media/favicon-16x16.png"/>
-    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png"/>
+    <link rel="manifest" href="/.webmanifest"/>
 </head>
 
 <body class="site">
@@ -19,7 +20,7 @@
     <header id="header">
         <div class="header_content">
             <div class="mobile_wrapper">
-                <a class="home_group" href="https://iancappellani.com">
+                <a class="home_group" href="/">
                     <svg aria-label="Ian Cappellani" class="header_content__logo" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100" version="1.1">
                         <ellipse cx="100" cy="50" rx="95" ry="45" stroke-width="10" fill="none" />
                         <text x="63" y="86" id="C">C</text>
@@ -43,40 +44,41 @@
             <nav id="main_nav" class="hidden">
                 <ul class="hidden">
                     <li>
-                        <a href="{{ site.baseurl }}/about.html">ABOUT</a>
+                        <a {% if page.title == "About" %}class="active" aria-current="page"{% endif %} href="/about">ABOUT</a>
                     </li>
                     <li>
-                        <a href="{{ site.baseurl }}/projects.html">PROJECTS</a>
+                        <a {% if page.title == "Projects" %}class="active" aria-current="page"{% endif %} href="/projects">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="{{ site.baseurl }}/contact.html">CONTACT</a>
+                        <a {% if page.title == "Contact" %}class="active" aria-current="page"{% endif %} href="/contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main id="main">
+        <div></div>
         {{ content }}
     </main>
     <footer>
         <nav>
             <ul>
                 <li>
-                    <a href="{{ site.baseurl }}">HOME</a>
+                    <a href="">HOME</a>
                 </li>
                 <li>
-                    <a class="active" href="{{ site.baseurl }}/about.html">ABOUT</a>
+                    <a href="/about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="{{ site.baseurl }}/projects.html">PROJECTS</a>
+                    <a href="/projects">PROJECTS</a>
                 </li>
                 <li>
-                    <a href="{{ site.baseurl }}/contact.html">CONTACT</a>
+                    <a href="/contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
-        <div id="copyright">Copyright &copy; 2020 Ian Cappellani</div>
+        <div id="copyright">Copyright &copy; 2021 Ian Cappellani</div>
     </footer>
-    <script src="script.js" ></script>
+    <script src="/script.js" ></script>
 </body>
 </html>

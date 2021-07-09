@@ -1,118 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Contact | Ian Cappellani</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/contact.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png"/>
-    <link rel="manifest" href="site.webmanifest"/>
-</head>
-
-<body class="site">
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
-    <header id="header">
-        <div class="header_content">
-            <div class="mobile_wrapper">
-                <a class="home_group" href="https://iancappellani.com">
-                    <svg aria-label="Ian Cappellani" class="header_content__logo" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100" version="1.1">
-                        <ellipse cx="100" cy="50" rx="95" ry="45" stroke-width="10" fill="none" />
-                        <text x="63" y="86" id="C">C</text>
-                        <text x="92" y="72" id="I">I</text>
-                    </svg>
-                    <div class="home_group__name">
-                        <div id="header__name">
-                            <span id="name_I">I</span>an <span id="name_C">C</span>appellani
-                        </div>
-                        <div id="header__position">New-Grad Developer</div>
-                    </div>
-                </a>
-                <button id="mobile_menu_button" aria-label="Open navigation menu">
-                    <svg aria-labelledby="mobile_menu_button" xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 100 80" version="1.1">
-                        <line x1="0" x2="100" y1="10" y2="10" stroke="currentColor" stroke-width="10" />
-                        <line x1="0" x2="100" y1="40" y2="40" stroke="currentColor" stroke-width="10" />
-                        <line x1="0" x2="100" y1="70" y2="70" stroke="currentColor" stroke-width="10" /> 
-                        </svg>
-                </button>
-            </div>
-            <nav id="main_nav" class="hidden">
-                <ul class="hidden">
-                    <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a aria-current="page" class="active" href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
+---
+layout: default
+title: Contact
+customCss:
+    - contact.css
+---
+<!-- <link rel="stylesheet" type="text/css" href="css/contact.css" /> -->
+<article id="main_content">
+    <h1>Get in Touch</h1>
+    <p>
+        If you are hiring or would like to get in touch for some other 
+        reason, here's how.
+    </p>
+    <p>
+        You can reach me by email at my first and last name with a 
+        dot between them. The domain is Google's email service.
+    </p>
+    <hr />
+    <section id="links">
+        <p>
+            Here are some links where you can find me:
+        </p>
+        <div class="links_container">
+            <a href="https://linkedin.com/in/ian-cappellani" title="Ian's LinkedIn Profile">
+                <figure class="link">
+                    <img src="/media/LI-In-Bug.png" alt="" />
+                    <figcaption>LinkedIn</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/icappel" title="Ian's GitHub Page">
+                <figure class="link">
+                    <img src="/media/GitHub-Mark-64px.png" alt="" />
+                    <figcaption>GitHub</figcaption>
+                </figure>
+            </a>
         </div>
-    </header>
-    <main id="main">
-        <article id="main_content">
-            <h1>Get in Touch</h1>
-            <p>
-                If you are hiring or would like to get in touch for some other 
-                reason, here's how.
-            </p>
-            <p>
-                You can reach me by email at my first and last name with a 
-                dot between them. The domain is Google's email service.
-            </p>
-            <hr />
-            <section id="links">
-                <p>
-                    Here are some links where you can find me:
-                </p>
-                <div class="links_container">
-                    <a href="https://linkedin.com/in/ian-cappellani" title="Ian's LinkedIn Profile">
-                        <figure class="link">
-                            <img src="media/LI-In-Bug.png" alt="" />
-                            <figcaption>LinkedIn</figcaption>
-                        </figure>
-                    </a>
-                    <a href="https://github.com/icappel" title="Ian's GitHub Page">
-                        <figure class="link">
-                            <img src="media/GitHub-Mark-64px.png" alt="" />
-                            <figcaption>GitHub</figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </section>
-            <section>
-                <p>
-                    <a href="media/IanCappellaniResume.pdf">You can download my r&eacute;sum&eacute;.</a>
-                    (Note that contact information has been excluded for 
-                    antispam and privacy purposes.)
-                </p>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://iancappellani.com">HOME</a>
-                </li>
-                <li>
-                    <a class="active" href="about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="projects.html">PROJECTS</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="copyright">Copyright &copy; 2020 Ian Cappellani</div>
-    </footer>
-    <script src="script.js" ></script>
-</body>
-</html>
+    </section>
+    <section>
+        <p>
+            <a href="/media/IanCappellaniResume.pdf">You can download my r&eacute;sum&eacute;.</a>
+            (Note that contact information has been excluded for 
+            antispam and privacy purposes.)
+        </p>
+    </section>
+</article>
