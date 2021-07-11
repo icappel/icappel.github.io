@@ -2,7 +2,7 @@
 the entire site. */
 
 .site {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Avenir Next, Avenir, sans-serif;
     background-color: black;
 }
 
@@ -20,6 +20,10 @@ article h1 {
 article {
     background-color: #eeeeee;
     border-radius: 0.5rem;
+}
+
+:focus {
+    outline: 5px solid hsla(215, 65%, 72%, 1);
 }
 
 /* Begin header theme styles */
