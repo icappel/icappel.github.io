@@ -1,0 +1,48 @@
+.resume-links {
+    text-align: center;
+}
+
+.resume-links a {
+    display: block;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin: 0.5rem 0;
+}
+
+h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+ul.inline {
+    display: inline;
+    list-style: none;
+    padding: 0;
+}
+
+ul.inline li {
+    display: inline;
+}
+
+ul.inline li:after {
+    content: ", ";
+}
+
+ul.inline li:last-child:after {
+    content: "";
+}
