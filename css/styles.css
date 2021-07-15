@@ -198,6 +198,24 @@ article h1 {
     padding: 1em;
 }
 
+ul.inline {
+    display: inline;
+    list-style: none;
+    padding: 0;
+}
+
+ul.inline li {
+    display: inline;
+}
+
+ul.inline li:after {
+    content: ", ";
+}
+
+ul.inline li:last-child:after {
+    content: "";
+}
+
 /* Begin footer styles */
 footer {
     width: 100vw;

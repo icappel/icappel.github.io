@@ -28,21 +28,3 @@ p {
 ul {
     margin: 0;
 }
-
-ul.inline {
-    display: inline;
-    list-style: none;
-    padding: 0;
-}
-
-ul.inline li {
-    display: inline;
-}
-
-ul.inline li:after {
-    content: ", ";
-}
-
-ul.inline li:last-child:after {
-    content: "";
-}
