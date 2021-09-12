@@ -2,138 +2,191 @@
 layout: default
 title: Projects
 customCss:
-    - projects.css
+  - projects.css
 ---
+
 <article id="main_content" class="projects_page">
-    <h1>Things I've Made</h1>
-    <p>
-        This page has summaries of various projects I've undertaken outside of work.
-    </p>
-    <hr />
-    <section>
-        <h2>Technical Projects</h2>
-        <section class="project">
-            <h3>License Plate Reporter</h3>
-            <figure>
-                <img src="/media/license-plates.png" alt="Screenshot of my License Plate Reporter project">
-                <figcaption>
-                    <p>
-                        This web app lets your report and query dangerous drivers. I made this to practice using AWS in preparation for my
-                        <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank">
-                        AWS developer</a> 
-                        <a href="https://www.credly.com/badges/aa0f9c33-cec1-415a-826e-a26f0d06c918/public_url" target="_blank">
-                            certification</a>.
-                    </p>
-                    <p>
-                        The backend is serverless, with an API implemented using API Gateway and Lambda manipulating data in 
-                        DynamoDB. The frontend is made with React and TypeScript.
-                    </p>
-                    <p>
-                        <a href="https://github.com/icappel/license-plates" target="_blank">Check out the code</a>.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-        <section class="project">
-            <h3>Todoist Calendar View</h3>
-            <figure>
-                <img src="/media/todoist-calendar.png" alt="Screenshot of my Todoist Calendar View project">
-                <figcaption>
-                    <p>
-                        I track my personal tasks using a service called <a href="https://todoist.com/" target="_blank">Todoist</a>.
-                        At one point, I started wishing their product would let me see what my upcoming week or so would look like 
-                        by viewing tasks in a calendar type view.
-                    </p>
-                    <p>
-                        I learned that this wasn't on their roadmap, so I took things into my own hands one weekend morning and 
-                        looked up the Todoist API. I spent an hour or two throwing this together. 
-                        Despite being quick and rough-around-the-edges, this is one of the projects I'm most proud of 
-                        since I actually use this little tool almost every day.
-                    </p>
-                    <p>
-                        <a href="https://iancappellani.com/calendar-view-todoist/calendar.html" target="_blank">
-                            You can try it out for yourself</a>
-                        (you'll need the API key from the "Integrations" pane of your account settings) and/or 
-                        <a href="https://github.com/icappel/calendar-view-todoist" target="_blank">take a look at the code</a>.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-        <section class="project">
-            <h3>Wikipedia Binge Visualizer</h3>
-            <figure>
-                <img src="/media/wiki_binge.png" alt="Screenshot of Wikipedia Binge Visualizer Work in Progress">
-                <figcaption>
-                    <p>
-                        If you're anything like me, you sometimes end 
-                        up wondering how you got to where you are after 
-                        reading Wikipedia for awhile. I thought it might 
-                        be interesting to view this using the implicit
-                        tree-like structure created by opening multiple 
-                        articles in new tabs.
-                    </p>
-                    <p>
-                        This project is a work in progress. Currently 
-                        the trees are built up in a custom data 
-                        structure before being translated to the 
-                        structure required by 
-                        <a href="https://fperucic.github.io/treant-js/">Treant.js</a>
-                        for drawing. The images and human-readable 
-                        article titles are fetched using the 
-                        <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> 
-                        API.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-        <section class="project">
-            <h3>This Website</h3>
-            <figure>
-                <iframe id="this-site" title="This Website" class="hide_on_small" 
-                        src="/"></iframe>
-                <figcaption>
-                    <p>
-                        I originally made this website in plain HTML files in a bout of purism.
-                        I've since converted it to Jekyll and now it's much more maintainable.
-                    </p>
-                    <p class="hide_on_small">
-                        As you can see from the iFrame above, the site 
-                        is fully responsive.
-                    </p>
-                    <p>
-                        Feel free to peruse the code in the devtools, 
-                        or check out the 
-                        <a href="https://github.com/icappel/icappel.github.io">
-                            GitHub repo</a>.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
+  <h1>Things I've Made</h1>
+  <p>
+    This page has summaries of various projects I've undertaken outside of work.
+  </p>
+  <hr />
+  <section>
+    <h2>Technical Projects</h2>
+    <section class="project">
+      <h3>License Plate Reporter</h3>
+      <figure>
+        <img
+          src="/media/license-plates.png"
+          alt="Screenshot of my License Plate Reporter project"
+        />
+        <figcaption>
+          <p>
+            This web app lets your report and query dangerous drivers. I made
+            this to practice using AWS in preparation for my
+            <a
+              href="https://aws.amazon.com/certification/certified-developer-associate/"
+              target="_blank"
+            >
+              AWS developer</a
+            >
+            <a
+              href="https://www.credly.com/badges/aa0f9c33-cec1-415a-826e-a26f0d06c918/public_url"
+              target="_blank"
+            >
+              certification</a
+            >.
+          </p>
+          <p>
+            The backend is serverless, with an API implemented using API Gateway
+            and Lambda manipulating data in DynamoDB. The frontend is made with
+            React and TypeScript.
+          </p>
+          <p>
+            <a href="https://github.com/icappel/license-plates" target="_blank"
+              >Check out the code</a
+            >.
+          </p>
+        </figcaption>
+      </figure>
     </section>
-    <section>
-        <h2>Personal Projects</h2>
-        <section class="project">
-            <h3>The Truly Minimalist Newspaper</h3>
-            <figure>
-                <img src="/media/truly_minimalist.png" alt="Screenshot of Truly Minimalist Newspaper homepage.">
-                <figcaption>
-                    <p>
-                        An online newsletter for people who don't like 
-                        the news.
-                    </p>
-                    <p>
-                        While not super technically-sophisticated, this 
-                        project did involve setting up a PayPal button, a bit 
-                        of DNS wrangling, and getting a business 
-                        license in the province of Ontario!
-                    </p>
-                    <p>
-                        You can check out the website at 
-                        <a href="https://trulyminimalist.news">this link</a>.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
+    <section class="project">
+      <h3>Todoist Calendar View</h3>
+      <figure>
+        <img
+          src="/media/todoist-calendar.png"
+          alt="Screenshot of my Todoist Calendar View project"
+        />
+        <figcaption>
+          <p>
+            I track my personal tasks using a service called
+            <a href="https://todoist.com/" target="_blank">Todoist</a>. At one
+            point, I started wishing their product would let me see what my
+            upcoming week or so would look like by viewing tasks in a calendar
+            type view.
+          </p>
+          <p>
+            I learned that this wasn't on their roadmap, so I took things into
+            my own hands one weekend morning and looked up the Todoist API. I
+            spent an hour or two throwing this together. Despite being quick and
+            rough-around-the-edges, this is one of the projects I'm most proud
+            of since I actually use this little tool almost every day.
+          </p>
+          <p>
+            <a
+              href="https://iancappellani.com/calendar-view-todoist/calendar.html"
+              target="_blank"
+            >
+              You can try it out for yourself</a
+            >
+            (you'll need the API key from the "Integrations" pane of your
+            account settings) and/or
+            <a
+              href="https://github.com/icappel/calendar-view-todoist"
+              target="_blank"
+              >take a look at the code</a
+            >.
+          </p>
+        </figcaption>
+      </figure>
     </section>
-    <a class="top_link" href="#main">Top ^</a>
+    <section class="project">
+      <h3>Wikipedia Binge Visualizer</h3>
+      <figure>
+        <img
+          src="/media/wiki_binge.png"
+          alt="Screenshot of Wikipedia Binge Visualizer Work in Progress"
+        />
+        <figcaption>
+          <p>
+            If you're anything like me, you sometimes end up wondering how you
+            got to where you are after reading Wikipedia for awhile. I thought
+            it might be interesting to view this using the implicit tree-like
+            structure created by opening multiple articles in new tabs.
+          </p>
+          <p>
+            This project is a work in progress. Currently the trees are built up
+            in a custom data structure before being translated to the structure
+            required by
+            <a href="https://fperucic.github.io/treant-js/">Treant.js</a>
+            for drawing. The images and human-readable article titles are
+            fetched using the
+            <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a>
+            API.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="project">
+      <h3>This Website</h3>
+      <figure>
+        <iframe
+          id="this-site"
+          title="This Website"
+          class="hide_on_small"
+          src="/"
+        ></iframe>
+        <figcaption>
+          <p>
+            I originally made this website in plain HTML files in a bout of
+            purism. I've since converted it to Jekyll and now it's much more
+            maintainable.
+          </p>
+          <p class="hide_on_small">
+            As you can see from the iFrame above, the site is fully responsive.
+          </p>
+          <p>
+            Feel free to peruse the code in the devtools, or check out the
+            <a href="https://github.com/icappel/icappel.github.io">
+              GitHub repo</a
+            >.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+  </section>
+  <section>
+    <h2>Personal Projects</h2>
+    <section class="project">
+      <h3>The Truly Minimalist Newspaper</h3>
+      <figure>
+        <img
+          src="/media/truly_minimalist.png"
+          alt="Screenshot of Truly Minimalist Newspaper homepage."
+        />
+        <figcaption>
+          <p>An online newsletter for people who don't like the news.</p>
+          <p>
+            While not super technically-sophisticated, this project did involve
+            setting up a PayPal button, a bit of DNS wrangling, and getting a
+            business license in the province of Ontario!
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="project">
+      <h3>An Unofficial Guide to the Canada Energy Regulator</h3>
+      <figure>
+        <img
+          src="/media/cer-guide-screenshot.png"
+          alt="Screenshot of C.E.R. guide."
+        />
+        <figcaption>
+          <p>
+            As part of a previous job, I had to learn how the Canada Energy
+            Regulator (CER) works and how a person participates in it.
+          </p>
+          <p>
+            I figured it couldn't hurt to share this knowledge in the hope that
+            someone might find it useful, such as someone wanting to get their
+            voice heard regarding a Canadian energy project.
+          </p>
+          <p>
+            <a href="/cer-guide">Check out the guide.</a>
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+  </section>
+  <a class="top_link" href="#main">Top ^</a>
 </article>
